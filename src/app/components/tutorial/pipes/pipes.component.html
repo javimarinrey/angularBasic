@@ -1,0 +1,35 @@
+<h1>Pipes</h1>
+<p class="lead">Transformación visual de la data</p>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Pipe</th>
+      <th>Código</th>
+      <th>Transformación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>uppercase</td>
+      <td>
+        <code><![CDATA[{ texto | uppercase }]]></code>
+      </td>
+      <td>{{texto | uppercase}}</td>
+    </tr>
+    <tr>
+      <td rowspan="2">currency</td>
+      <td>
+        <code><![CDATA[{ importe | currency }]]></code>
+      </td>
+      <td>{{importe | currency}}</td>
+    </tr>
+    <tr>
+      <td>
+        <code><![CDATA[{ importe | currency:'EUR' }]]></code>
+      </td>
+      <td>{{importe | currency:'EUR'}}</td>
+    </tr>
+  </tbody>
+</table>
+
