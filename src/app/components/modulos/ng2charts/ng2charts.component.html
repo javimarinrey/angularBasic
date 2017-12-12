@@ -1,0 +1,16 @@
+<h1>ng2-charts <small class="text-sm-center"><a href="https://valor-software.com/ng2-charts/" target="_blank">https://valor-software.com/ng2-charts/</a></small></h1>
+<p class="lead">Angular2 directives for Chart.js</p>
+
+<div>
+  <div style="display: block">
+    <canvas baseChart
+            [datasets]="barChartData"
+            [labels]="barChartLabels"
+            [options]="barChartOptions"
+            [legend]="barChartLegend"
+            [chartType]="barChartType"
+            (chartHover)="chartHovered($event)"
+            (chartClick)="chartClicked($event)"></canvas>
+  </div>
+  <button (click)="randomize()">Update</button>
+</div>
