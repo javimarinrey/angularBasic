@@ -1,0 +1,11 @@
+<h1>ng2-charts <small><a href="https://www.npmjs.com/package/ng2-translate" target="_blank">https://www.npmjs.com/package/ng2-translate</a></small></h1>
+<p class="lead">An implementation of angular translate for Angular 2.</p>
+
+<label>
+  {{ 'HOME.SELECT' | translate }}
+  <select #langSelect (change)="translate.use(langSelect.value)">
+    <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+  </select>
+</label>
+
+<p>{{ 'HOME.TITLE' | translate }}</p>
