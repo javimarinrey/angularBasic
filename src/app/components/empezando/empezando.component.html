@@ -1,0 +1,50 @@
+<h1>Empezando</h1>
+<hr>
+<h2>Instalaciones mínimas</h2>
+<ul>
+  <li>NodeJs<br><a href="https://nodejs.org/es/" target="_blank">https://nodejs.org/es/</a></li>
+  <li>TypeScript<br><a href="http://www.typescriptlang.org/" target="_blank">http://www.typescriptlang.org/</a></li>
+  <li>Angular CLI<br><a href="https://cli.angular.io/" target="_blank">https://cli.angular.io/</a><br><a href="https://github.com/angular/angular-cli">https://github.com/angular/angular-cli</a></li>
+</ul>
+<h2>Generar y arrancar proyecto</h2>
+<pre>
+  <code>
+    ng new PROJECT-NAME
+    cd PROJECT-NAME
+    ng serve -o
+  </code>
+</pre>
+
+<p>Navegue a http://localhost:4200/. La aplicación se volverá a cargar automáticamente si cambia alguno de los archivos fuente</p>
+<p>Puede configurar el host HTTP predeterminado y el puerto utilizado por el servidor de desarrollo con dos opciones de línea de comandos:</p>
+<pre>
+  <code>
+    ng serve --host 0.0.0.0 --port 4201
+  </code>
+</pre>
+<h2>Actualizar Angular CLI</h2>
+<p>Si está utilizando Angular CLI 1.0.0-beta.28 o inferior, debe desinstalar el paquete angular-cli:</p>
+<pre>
+  <code>
+    npm uninstall -g angular-cli
+    npm uninstall --save-dev angular-cli
+  </code>
+</pre>
+<p>Para actualizar Angular CLI a una nueva versión, debe actualizar tanto el paquete global como el paquete local de su proyecto.</p>
+<p><strong>Global package:</strong></p>
+<pre>
+  <code>
+    npm uninstall -g @angular/cli
+    npm cache clean
+    # if npm version is > 5 then use `npm cache verify` to avoid errors (or to avoid using --force)
+    npm install -g @angular/cli@latest
+  </code>
+</pre>
+<p><strong>Local project package:</strong></p>
+<pre>
+  <code>
+    rm -rf node_modules dist # use rmdir /S/Q node_modules dist in Windows Command Prompt; use rm -r -fo node_modules,dist in Windows PowerShell
+    npm install --save-dev @angular/cli@latest
+    npm install
+  </code>
+</pre>

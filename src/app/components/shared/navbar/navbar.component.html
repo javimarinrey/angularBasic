@@ -5,11 +5,15 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['empezando']">Empezando</a>
+      </li>
       <li class="nav-item dropdown" routerLinkActive="active">
         <a class="nav-link dropdown-toggle" href="#" id="navbarTutorial" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Tutorial
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarTutorial">
+          <a class="dropdown-item" [routerLink]="['tutorial','introduccion']">Introducción</a>
           <a class="dropdown-item" [routerLink]="['tutorial','pipes']">Pipes</a>
         </div>
       </li>
@@ -19,7 +23,11 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarModulos">
           <a class="dropdown-item" [routerLink]="['modulos','ng2charts']">Ng2 Charts</a>
-          <a class="dropdown-item">Transalte</a>
+          <a class="dropdown-item" [routerLink]="['modulos','ng2translate']">Ng2 Translate</a>
+          <a class="dropdown-item" [routerLink]="['modulos','ng2ckeditor']">Ng2 Ckeditor</a>
+          <a class="dropdown-item" href="https://github.com/joeherold/angular2-sails" target="_blank">angular2-sails</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" [routerLink]="['modulos','angularfire']">AngularFirebase</a>
         </div>
       </li>
     </ul>
