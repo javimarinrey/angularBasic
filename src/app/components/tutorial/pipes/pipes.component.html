@@ -1,7 +1,9 @@
 <h1>Pipes <small class="text-sm-center"><a href="https://angular.io/guide/pipes" target="_blank">https://angular.io/guide/pipes</a></small></h1>
 <p class="lead">Transformación visual de la data</p>
 
-<table class="table">
+<p appResaltado>Hola</p>
+
+<table class="table mb-4">
   <thead>
     <tr>
       <th>Pipe</th>
@@ -33,54 +35,41 @@
     <tr>
       <td>date</td>
       <td>
-        <code></code>
+        <code><![CDATA[{ fecha | date }]]></code>
       </td>
-      <td></td>
+      <td>{{fecha | date}}</td>
     </tr>
     <tr>
       <td>json</td>
       <td>
-        <code></code>
+        <code><![CDATA[{ object | json }]]></code>
       </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>limitTo</td>
-      <td>
-        <code></code>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>lowercase</td>
-      <td>
-        <code></code>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>async</td>
-      <td>
-        <code></code>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>decimal</td>
-      <td>
-        <code></code>
-      </td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>percent</td>
-      <td>
-        <code></code>
-      </td>
-      <td></td>
+      <td>{{object | json}}</td>
     </tr>
   </tbody>
 </table>
 
-<h3>Pipes personalizado</h3>
-<p>{{texto | capitalizado}}</p>
+<p><a href="https://angular.io/api?type=pipe" target="_blank">https://angular.io/api?type=pipe</a></p>
+
+<h4>Pipes personalizado</h4><br>
+<table class="table">
+  <thead>
+  <tr>
+    <th>Pipe</th>
+    <th>Código</th>
+    <th>Transformación</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>capitalizado</td>
+    <td>
+      <code><![CDATA[{ texto | capitalizado }]]></code>
+    </td>
+    <td>{{texto | capitalizado}}</td>
+  </tr>
+  </tbody>
+</table>
+<app-card-code title="src/app/pipes/capitalizado.pipe.ts" body="{{pipe_capitalizado}}"></app-card-code>
+<app-card-code title="src/app/app.modules.ts" body="{{app_module}}"></app-card-code>
+
