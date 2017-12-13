@@ -1,0 +1,17 @@
+<h1>Collapse</h1>
+<p>
+  <button type="button" class="btn btn-outline-primary" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+    Toggle
+  </button>
+</p>
+<div id="collapseExample" [ngbCollapse]="isCollapsed">
+  <div class="card">
+    <div class="card-body">
+      You can collapse this card by clicking Toggle
+    </div>
+  </div>
+</div>
+<br>
+<app-card-code title="collapse.component.html" body="{{code}}"></app-card-code>
+<app-card-code title="collapse.component.ts" body="{{code1}}"></app-card-code>

@@ -6,6 +6,7 @@ import { Ng2chartsComponent } from './components/modulos/ng2charts/ng2charts.com
 import { Ng2translateComponent } from './components/modulos/ng2translate/ng2translate.component';
 import { NgckeditorComponent } from './components/modulos/ngckeditor/ngckeditor.component';
 import { AngularfireComponent } from './components/modulos/angularfire/angularfire.component';
+import { Bootstrap4Component } from './components/modulos/bootstrap4/bootstrap4.component';
 import { IntroducionComponent } from './components/tutorial/introducion/introducion.component';
 
 const  APP_ROUTES: Routes = [
@@ -17,6 +18,7 @@ const  APP_ROUTES: Routes = [
   { path: 'modulos/ng2translate', component: Ng2translateComponent },
   { path: 'modulos/ng2ckeditor', component: NgckeditorComponent },
   { path: 'modulos/angularfire', component: AngularfireComponent },
+  { path: 'modulos/bootstrap4', component: Bootstrap4Component },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
