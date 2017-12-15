@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-collapse',
-  templateUrl: './collapse.component.html',
-  styleUrls: ['./collapse.component.css']
+  templateUrl: './collapse.component.html'
 })
 export class CollapseComponent implements OnInit {
 

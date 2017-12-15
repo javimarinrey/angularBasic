@@ -5,6 +5,7 @@ import { ChartsModule } from 'ng2-charts';
 import { TranslateModule } from 'ng2-translate';
 import { CKEditorModule } from 'ng2-ckeditor';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {ScrollToModule} from 'ng2-scroll-to';
 
 // Rutas
 import { APP_ROUTING } from './app.routes';
@@ -35,6 +36,14 @@ import { CarouselComponent } from './components/modulos/bootstrap4/carousel/caro
 import { CollapseComponent } from './components/modulos/bootstrap4/collapse/collapse.component';
 import { DatepickerComponent } from './components/modulos/bootstrap4/datepicker/datepicker.component';
 import { DropdownComponent } from './components/modulos/bootstrap4/dropdown/dropdown.component';
+import { ModalComponent } from './components/modulos/bootstrap4/modal/modal.component';
+import { PaginationComponent } from './components/modulos/bootstrap4/pagination/pagination.component';
+import { PopoverComponent } from './components/modulos/bootstrap4/popover/popover.component';
+import { ProgressbarComponent } from './components/modulos/bootstrap4/progressbar/progressbar.component';
+import { RatingComponent } from './components/modulos/bootstrap4/rating/rating.component';
+import { TimepickerComponent } from './components/modulos/bootstrap4/timepicker/timepicker.component';
+import { TooltipComponent } from './components/modulos/bootstrap4/tooltip/tooltip.component';
+import { TypeaheadComponent } from './components/modulos/bootstrap4/typeahead/typeahead.component';
 
 
 
@@ -60,7 +69,15 @@ import { DropdownComponent } from './components/modulos/bootstrap4/dropdown/drop
     CarouselComponent,
     CollapseComponent,
     DatepickerComponent,
-    DropdownComponent
+    DropdownComponent,
+    ModalComponent,
+    PaginationComponent,
+    PopoverComponent,
+    ProgressbarComponent,
+    RatingComponent,
+    TimepickerComponent,
+    TooltipComponent,
+    TypeaheadComponent
   ],
   imports: [
     BrowserModule,
@@ -69,7 +86,8 @@ import { DropdownComponent } from './components/modulos/bootstrap4/dropdown/drop
     ChartsModule,
     CKEditorModule,
     TranslateModule.forRoot(),
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    ScrollToModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]

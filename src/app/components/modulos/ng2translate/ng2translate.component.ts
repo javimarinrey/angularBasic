@@ -8,7 +8,7 @@ import { TranslateService } from 'ng2-translate';
 })
 export class Ng2translateComponent implements OnInit {
 
-  constructor(private translate: TranslateService) {
+  constructor(public translate: TranslateService) {
     translate.addLangs(['en', 'fr']);
     translate.setDefaultLang('en');
 

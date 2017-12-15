@@ -1,0 +1,26 @@
+<h2>Popover</h2>
+<div>
+<button type="button"
+        class="btn btn-outline-secondary"
+        placement="top"
+        ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+        popoverTitle="Popover on top">
+  Popover on top
+</button>
+<ng-template #popContent>Hello, World!</ng-template>
+<button type="button"
+        class="btn btn-outline-secondary"
+        [ngbPopover]="popContent"
+        popoverTitle="Fancy content">
+  I've got markup and bindings in my popover!
+</button>
+<button type="button"
+        class="btn btn-outline-secondary"
+        ngbPopover="You see, I show up on hover!"
+        triggers="mouseenter:mouseleave"
+        popoverTitle="Pop title">
+  Hover over me!
+</button>
+</div>
+<br>
+<app-card-code title="popover.component.html" body="{{code}}"></app-card-code>

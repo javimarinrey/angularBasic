@@ -10,6 +10,7 @@ export class Bootstrap4Component implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }
