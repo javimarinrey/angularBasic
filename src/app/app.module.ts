@@ -5,7 +5,8 @@ import { ChartsModule } from 'ng2-charts';
 import { TranslateModule } from 'ng2-translate';
 import { CKEditorModule } from 'ng2-ckeditor';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import {ScrollToModule} from 'ng2-scroll-to';
+import { ScrollToModule } from 'ng2-scroll-to';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Rutas
 import { APP_ROUTING } from './app.routes';
@@ -44,6 +45,7 @@ import { RatingComponent } from './components/modulos/bootstrap4/rating/rating.c
 import { TimepickerComponent } from './components/modulos/bootstrap4/timepicker/timepicker.component';
 import { TooltipComponent } from './components/modulos/bootstrap4/tooltip/tooltip.component';
 import { TypeaheadComponent } from './components/modulos/bootstrap4/typeahead/typeahead.component';
+import { Ng2animateComponent } from './components/modulos/ng2animate/ng2animate.component';
 
 
 
@@ -77,7 +79,8 @@ import { TypeaheadComponent } from './components/modulos/bootstrap4/typeahead/ty
     RatingComponent,
     TimepickerComponent,
     TooltipComponent,
-    TypeaheadComponent
+    TypeaheadComponent,
+    Ng2animateComponent
   ],
   imports: [
     BrowserModule,
@@ -88,6 +91,7 @@ import { TypeaheadComponent } from './components/modulos/bootstrap4/typeahead/ty
     TranslateModule.forRoot(),
     NgbModule.forRoot(),
     ScrollToModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

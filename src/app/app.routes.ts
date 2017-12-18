@@ -8,6 +8,7 @@ import { NgckeditorComponent } from './components/modulos/ngckeditor/ngckeditor.
 import { AngularfireComponent } from './components/modulos/angularfire/angularfire.component';
 import { Bootstrap4Component } from './components/modulos/bootstrap4/bootstrap4.component';
 import { IntroducionComponent } from './components/tutorial/introducion/introducion.component';
+import { Ng2animateComponent } from './components/modulos/ng2animate/ng2animate.component';
 
 const  APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
@@ -19,6 +20,7 @@ const  APP_ROUTES: Routes = [
   { path: 'modulos/ng2ckeditor', component: NgckeditorComponent },
   { path: 'modulos/angularfire', component: AngularfireComponent },
   { path: 'modulos/bootstrap4', component: Bootstrap4Component },
+  { path: 'modulos/ng2animate', component: Ng2animateComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
