@@ -9,6 +9,7 @@ import { AngularfireComponent } from './components/modulos/angularfire/angularfi
 import { Bootstrap4Component } from './components/modulos/bootstrap4/bootstrap4.component';
 import { IntroducionComponent } from './components/tutorial/introducion/introducion.component';
 import { Ng2animateComponent } from './components/modulos/ng2animate/ng2animate.component';
+import { Ng2nouisliderComponent } from './components/modulos/ng2nouislider/ng2nouislider.component';
 
 const  APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
@@ -21,6 +22,7 @@ const  APP_ROUTES: Routes = [
   { path: 'modulos/angularfire', component: AngularfireComponent },
   { path: 'modulos/bootstrap4', component: Bootstrap4Component },
   { path: 'modulos/ng2animate', component: Ng2animateComponent },
+  { path: 'modulos/ng2uislider', component: Ng2nouisliderComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 

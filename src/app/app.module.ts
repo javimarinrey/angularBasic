@@ -46,6 +46,7 @@ import { TimepickerComponent } from './components/modulos/bootstrap4/timepicker/
 import { TooltipComponent } from './components/modulos/bootstrap4/tooltip/tooltip.component';
 import { TypeaheadComponent } from './components/modulos/bootstrap4/typeahead/typeahead.component';
 import { Ng2animateComponent } from './components/modulos/ng2animate/ng2animate.component';
+import { Ng2nouisliderComponent } from './components/modulos/ng2nouislider/ng2nouislider.component';
 
 
 
@@ -80,7 +81,8 @@ import { Ng2animateComponent } from './components/modulos/ng2animate/ng2animate.
     TimepickerComponent,
     TooltipComponent,
     TypeaheadComponent,
-    Ng2animateComponent
+    Ng2animateComponent,
+    Ng2nouisliderComponent
   ],
   imports: [
     BrowserModule,
